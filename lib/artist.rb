@@ -23,10 +23,8 @@ class Artist
   end
 
   def genres
-    songs.collect do |song|
-      if song.artist == self
-        song
-      end
-    end
+    songs.collect {|song| song.genre}
   end
+  
+  
 end
